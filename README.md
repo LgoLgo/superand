@@ -57,3 +57,22 @@ func main() {
 	}
 }
 ```
+
+## Benchmark
+
+```go
+BenchmarkStandardRand
+BenchmarkStandardRand-8                 	79792984	        14.71 ns/op
+
+BenchmarkLgoRand
+BenchmarkLgoRand-8                      	54015529	        20.42 ns/op
+
+BenchmarkUnsafeLgoRand
+BenchmarkUnsafeLgoRand-8                	275500960	        4.288 ns/op
+
+BenchmarkStandardRandWithConcurrent
+BenchmarkStandardRandWithConcurrent-8   	13186624	        91.46 ns/op
+
+BenchmarkLgoRandWithConcurrent
+BenchmarkLgoRandWithConcurrent-8        	309059797	        3.238 ns/op
+```
