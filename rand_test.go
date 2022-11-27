@@ -1,4 +1,4 @@
-package LgoRand
+package superand
 
 import (
 	"testing"

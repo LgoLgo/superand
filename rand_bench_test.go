@@ -1,4 +1,4 @@
-package LgoRand
+package superand
 
 import (
 	"math/rand"
@@ -11,14 +11,14 @@ func BenchmarkStandardRand(b *testing.B) {
 	}
 }
 
-func BenchmarkLgoRand(b *testing.B) {
+func BenchmarkSuperand(b *testing.B) {
 	rd := New()
 	for i := 0; i < b.N; i++ {
 		rd.Intn(1000)
 	}
 }
 
-func BenchmarkUnsafeLgoRand(b *testing.B) {
+func BenchmarkUnsafesuperand(b *testing.B) {
 	rd := NewUnsafe()
 	for i := 0; i < b.N; i++ {
 		rd.Intn(1000)
@@ -33,7 +33,7 @@ func BenchmarkStandardRandWithConcurrent(b *testing.B) {
 	})
 }
 
-func BenchmarkLgoRandWithConcurrent(b *testing.B) {
+func BenchmarkSuperandWithConcurrent(b *testing.B) {
 	rd := New()
 	b.RunParallel(func(pb *testing.PB) {
 		for pb.Next() {

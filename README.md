@@ -1,4 +1,4 @@
-# LgoRand
+# superand
 
 High-performance Rand library, far more efficient than the official library. Especially when concurrent.
 
@@ -9,13 +9,13 @@ To install this package, you need to install Go and set your Go workspace first.
 1. You first need [Go](https://golang.org/) installed, then you can use the below Go command to install Lgopool.
 
 ```sh
-go get -u github.com/LgoLgo/LgoRand
+go get -u github.com/LgoLgo/superand
 ```
 
 2. Import it in your code:
 
 ```go
-import "github.com/LgoLgo/LgoRand"
+import "github.com/LgoLgo/superand"
 ```
 
 ## Example
@@ -28,12 +28,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/LgoLgo/LgoRand"
+	"github.com/LgoLgo/superand"
 )
 
 func main() {
 	maxNum := 100
-	rand := LgoRand.New()
+	rand := superand.New()
 	secretNumber := rand.Intn(maxNum)
 	// fmt.Println("The secret number is ", secretNumber)
 
@@ -64,15 +64,15 @@ func main() {
 BenchmarkStandardRand
 BenchmarkStandardRand-8                 	79792984	        14.71 ns/op
 
-BenchmarkLgoRand
-BenchmarkLgoRand-8                      	54015529	        20.42 ns/op
+Benchmarksuperand
+Benchmarksuperand-8                      	54015529	        20.42 ns/op
 
-BenchmarkUnsafeLgoRand
-BenchmarkUnsafeLgoRand-8                	275500960	        4.288 ns/op
+BenchmarkUnsafesuperand
+BenchmarkUnsafesuperand-8                	275500960	        4.288 ns/op
 
 BenchmarkStandardRandWithConcurrent
 BenchmarkStandardRandWithConcurrent-8   	13186624	        91.46 ns/op
 
-BenchmarkLgoRandWithConcurrent
-BenchmarkLgoRandWithConcurrent-8        	309059797	        3.238 ns/op
+BenchmarksuperandWithConcurrent
+BenchmarksuperandWithConcurrent-8        	309059797	        3.238 ns/op
 ```

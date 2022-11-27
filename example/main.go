@@ -3,12 +3,12 @@ package main
 import (
 	"fmt"
 
-	"github.com/LgoLgo/LgoRand"
+	"github.com/LgoLgo/superand"
 )
 
 func main() {
 	maxNum := 100
-	rand := LgoRand.New()
+	rand := superand.New()
 	secretNumber := rand.Intn(maxNum)
 	// fmt.Println("The secret number is ", secretNumber)
 
