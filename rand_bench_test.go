@@ -18,7 +18,7 @@ func BenchmarkSuperand(b *testing.B) {
 	}
 }
 
-func BenchmarkUnsafesuperand(b *testing.B) {
+func BenchmarkUnsafeSuperand(b *testing.B) {
 	rd := NewUnsafe()
 	for i := 0; i < b.N; i++ {
 		rd.Intn(1000)
