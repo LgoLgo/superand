@@ -6,7 +6,7 @@ High-performance Rand library, far more efficient than the official library. Esp
 
 To install this package, you need to install Go and set your Go workspace first.
 
-1. You first need [Go](https://golang.org/) installed, then you can use the below Go command to install Lgopool.
+1. You first need [Go](https://golang.org/) installed, then you can use the below Go command to install superand.
 
 ```sh
 go get -u github.com/LgoLgo/superand
