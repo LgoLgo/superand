@@ -76,3 +76,7 @@ BenchmarkStandardRandWithConcurrent-8   	13186624	        91.46 ns/op
 BenchmarksuperandWithConcurrent
 BenchmarksuperandWithConcurrent-8        	309059797	        3.238 ns/op
 ```
+
+## License
+
+This project is under the Apache License 2.0. See the LICENSE file for the full license text.
