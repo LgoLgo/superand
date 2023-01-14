@@ -1,4 +1,4 @@
-# superand
+![superand](img/superand.png)
 
 High-performance Rand library, far more efficient than the official library. Especially when concurrent.
 
